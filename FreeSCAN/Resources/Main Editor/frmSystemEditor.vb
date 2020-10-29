@@ -3128,15 +3128,15 @@ abort:
 
     Public Sub mnuAbout_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles mnuAbout.Click
         Dim strMsg As String
-        strMsg = strProgTitle & " "
-        strMsg = strMsg & "Written by Assaf Shool" & vbNewLine
+        strMsg = strProgTitle & vbNewLine
+        strMsg = strMsg & "originally written by Assaf Shool" & vbNewLine
+        strMsg = strMsg & "changes and updates by W3AXL and Matt Callahan" & vbNewLine
         strMsg = strMsg & "This program is Freeware. If you enjoy using this program, please consider a donation to"
         strMsg = strMsg & " help with development efforts." & vbNewLine
 
         strMsg = strMsg & "This version supports the " & supportedscanners & " scanners." & vbNewLine
         strMsg = strMsg & "Thanks goes out to all of you who donated your time and through PayPal, with which without your help this program would not have been possible." & vbNewLine
         strMsg = strMsg & "Use at your own risk. (This program contains proprietery Uniden control codes.)" & vbNewLine
-        strMsg = strMsg & "See http://www.sixspotsoftware.com for updates and information."
         frmAbout.Text1.Text = strMsg
         frmAbout.Visible = True
 
