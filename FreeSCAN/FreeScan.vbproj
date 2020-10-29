@@ -88,9 +88,8 @@
     <Reference Include="Microsoft.VisualBasic.Compatibility">
       <Name>Microsoft.VisualBasic.Compatibility</Name>
     </Reference>
-    <Reference Include="NAudio, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\NAudio.dll</HintPath>
+    <Reference Include="NAudio, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\NAudio.1.10.0\lib\net35\NAudio.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -444,6 +443,7 @@
     <Compile Include="ScreenSize.vb">
       <SubType>Code</SubType>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Resources\1375121_10151880936949421_1072291165_t1.png" />
     <None Include="Resources\1375121_10151880936949421_1072291165_t.png" />
     <None Include="Resources\appstore.bmp" />

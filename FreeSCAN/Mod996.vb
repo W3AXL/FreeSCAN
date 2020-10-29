@@ -283,11 +283,12 @@ Module Mod996
             strNAC = "SRCH"
         ElseIf HexToDec(strNAC, True) <> 0 Or strNAC = "0" Then
             intBuff = HexToDec(strNAC, True)
-            If intBuff < 0 Then
-                intBuff = 0
-            ElseIf intBuff > 4095 Then
-                intBuff = 4095
-            End If
+			If intBuff < 0 Then
+				intBuff = 0
+				'valid DMR CCs are 0-15, so that would be hex 0x1000 to 0x100F (dec 4096 to 4111)
+			ElseIf intBuff > 4111 Then
+				intBuff = 4111
+			End If
             strNAC = Hex(intBuff)
         Else
             strNAC = Nothing

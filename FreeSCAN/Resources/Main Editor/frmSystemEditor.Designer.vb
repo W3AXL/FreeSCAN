@@ -570,25 +570,6 @@
         Me.lblCnvGrpRange = New System.Windows.Forms.Label()
         Me._cmdFreeGQK_0 = New System.Windows.Forms.Button()
         Me.grdConvChan = New System.Windows.Forms.DataGridView()
-        Me.grdConvChan_Display = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grdConvChan_Freq = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grdConvChan_LO = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Tone = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_ToneLO = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Att = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Pri = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Step = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdCOnvChan_MOD = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_NAC = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grdConvChan_AudioType = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_AltTone = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_AltLevel = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_AltColor = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_AltPattern = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_VolOffset = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_NumTag = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grdConvChan_RecOut = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Comment = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtConvGroupName = New System.Windows.Forms.TextBox()
         Me.chkConvGroupLockout = New System.Windows.Forms.CheckBox()
         Me._Label28_37 = New System.Windows.Forms.Label()
@@ -769,6 +750,25 @@
         Me.DownloadScannerToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.ControlScannerToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.grdConvChan_Display = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grdConvChan_Freq = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grdConvChan_LO = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Tone = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_ToneLO = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Att = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Pri = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Step = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdCOnvChan_MOD = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_NAC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grdConvChan_AudioType = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_AltTone = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_AltLevel = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_AltColor = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_AltPattern = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_VolOffset = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_NumTag = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grdConvChan_RecOut = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Comment = New System.Windows.Forms.DataGridViewTextBoxColumn()
         _Label28_17 = New System.Windows.Forms.Label()
         _Label28_18 = New System.Windows.Forms.Label()
         _Label28_6 = New System.Windows.Forms.Label()
@@ -867,7 +867,7 @@
         _Label28_17.RightToLeft = System.Windows.Forms.RightToLeft.No
         _Label28_17.Size = New System.Drawing.Size(506, 14)
         _Label28_17.TabIndex = 157
-        _Label28_17.Text = "Name:                                            Quick Key                       " & _
+        _Label28_17.Text = "Name:                                            Quick Key                       " &
     "  Startup Key        APCO Mode         Threshold"
         '
         '_Label28_18
@@ -882,7 +882,7 @@
         _Label28_18.RightToLeft = System.Windows.Forms.RightToLeft.No
         _Label28_18.Size = New System.Drawing.Size(431, 13)
         _Label28_18.TabIndex = 211
-        _Label28_18.Text = "Site Type                                                                        " & _
+        _Label28_18.Text = "Site Type                                                                        " &
     "         Hold Time             Modulation"
         '
         '_Label28_6
@@ -1053,7 +1053,7 @@
         Me.chkTrnSysProtect.Size = New System.Drawing.Size(147, 18)
         Me.chkTrnSysProtect.TabIndex = 383
         Me.chkTrnSysProtect.Text = "Enable System Protect (!)"
-        Me.ToolTip1.SetToolTip(Me.chkTrnSysProtect, "This will prevent users from being able to make any changes to the system. CAUTIO" & _
+        Me.ToolTip1.SetToolTip(Me.chkTrnSysProtect, "This will prevent users from being able to make any changes to the system. CAUTIO" &
         "N: Once enabled, this system cannot be accessed by the user or software.")
         Me.chkTrnSysProtect.UseVisualStyleBackColor = True
         '
@@ -1457,7 +1457,7 @@
         Me.cmbConvHoldTime.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.cmbConvHoldTime.Size = New System.Drawing.Size(65, 22)
         Me.cmbConvHoldTime.TabIndex = 12
-        Me.ToolTip1.SetToolTip(Me.cmbConvHoldTime, "Minimum amount of time the scanner will spend scanning the system before moving o" & _
+        Me.ToolTip1.SetToolTip(Me.cmbConvHoldTime, "Minimum amount of time the scanner will spend scanning the system before moving o" &
         "n to the next")
         '
         'chkMotDigEndCode
@@ -1629,7 +1629,7 @@
         Me.chkCnvSysProtect.Size = New System.Drawing.Size(147, 18)
         Me.chkCnvSysProtect.TabIndex = 384
         Me.chkCnvSysProtect.Text = "Enable System Protect (!)"
-        Me.ToolTip1.SetToolTip(Me.chkCnvSysProtect, "This will prevent users from being able to make any changes to the system. CAUTIO" & _
+        Me.ToolTip1.SetToolTip(Me.chkCnvSysProtect, "This will prevent users from being able to make any changes to the system. CAUTIO" &
         "N: Once enabled, this system cannot be accessed by the user or software.")
         Me.chkCnvSysProtect.UseVisualStyleBackColor = True
         '
@@ -3648,7 +3648,7 @@
         Me._Label28_34.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me._Label28_34.Size = New System.Drawing.Size(530, 14)
         Me._Label28_34.TabIndex = 98
-        Me._Label28_34.Text = "Groups assigned the following quick keys can be enabled here. One key can be assi" & _
+        Me._Label28_34.Text = "Groups assigned the following quick keys can be enabled here. One key can be assi" &
     "gned to multiple groups."
         '
         '_Label28_24
@@ -3664,7 +3664,7 @@
         Me._Label28_24.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me._Label28_24.Size = New System.Drawing.Size(521, 14)
         Me._Label28_24.TabIndex = 96
-        Me._Label28_24.Text = "Name                                          Quick Key                          " & _
+        Me._Label28_24.Text = "Name                                          Quick Key                          " &
     "        Startup Key          APCO Mode      Threshold"
         '
         'frmFleetMap
@@ -3908,7 +3908,7 @@
         Me.Label29.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label29.Size = New System.Drawing.Size(473, 25)
         Me.Label29.TabIndex = 51
-        Me.Label29.Text = "Fleet mapping is applicable only to Motorola Type I and Type II Hybrids. If unsur" & _
+        Me.Label29.Text = "Fleet mapping is applicable only to Motorola Type I and Type II Hybrids. If unsur" &
     "e, leave default."
         '
         '_Label28_13
@@ -4600,153 +4600,6 @@
         Me.grdConvChan.Size = New System.Drawing.Size(351, 45)
         Me.grdConvChan.TabIndex = 267
         '
-        'grdConvChan_Display
-        '
-        Me.grdConvChan_Display.HeaderText = "Display"
-        Me.grdConvChan_Display.MaxInputLength = 16
-        Me.grdConvChan_Display.Name = "grdConvChan_Display"
-        Me.grdConvChan_Display.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic
-        Me.grdConvChan_Display.Width = 140
-        '
-        'grdConvChan_Freq
-        '
-        Me.grdConvChan_Freq.HeaderText = "Frequency"
-        Me.grdConvChan_Freq.MaxInputLength = 15
-        Me.grdConvChan_Freq.Name = "grdConvChan_Freq"
-        Me.grdConvChan_Freq.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.grdConvChan_Freq.Width = 80
-        '
-        'grdConvChan_LO
-        '
-        Me.grdConvChan_LO.HeaderText = "L/O"
-        Me.grdConvChan_LO.Name = "grdConvChan_LO"
-        Me.grdConvChan_LO.Width = 40
-        '
-        'grdConvChan_Tone
-        '
-        Me.grdConvChan_Tone.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_Tone.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_Tone.HeaderText = "Tone"
-        Me.grdConvChan_Tone.Name = "grdConvChan_Tone"
-        Me.grdConvChan_Tone.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grdConvChan_Tone.Width = 70
-        '
-        'grdConvChan_ToneLO
-        '
-        Me.grdConvChan_ToneLO.HeaderText = "Tone LO"
-        Me.grdConvChan_ToneLO.Name = "grdConvChan_ToneLO"
-        Me.grdConvChan_ToneLO.Width = 60
-        '
-        'grdConvChan_Att
-        '
-        Me.grdConvChan_Att.HeaderText = "Att"
-        Me.grdConvChan_Att.Name = "grdConvChan_Att"
-        Me.grdConvChan_Att.Width = 40
-        '
-        'grdConvChan_Pri
-        '
-        Me.grdConvChan_Pri.HeaderText = "Pri"
-        Me.grdConvChan_Pri.Name = "grdConvChan_Pri"
-        Me.grdConvChan_Pri.Width = 40
-        '
-        'grdConvChan_Step
-        '
-        Me.grdConvChan_Step.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_Step.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_Step.HeaderText = "Step"
-        Me.grdConvChan_Step.Name = "grdConvChan_Step"
-        Me.grdConvChan_Step.Width = 60
-        '
-        'grdCOnvChan_MOD
-        '
-        Me.grdCOnvChan_MOD.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdCOnvChan_MOD.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdCOnvChan_MOD.HeaderText = "Mod"
-        Me.grdCOnvChan_MOD.Name = "grdCOnvChan_MOD"
-        Me.grdCOnvChan_MOD.Width = 55
-        '
-        'grdConvChan_NAC
-        '
-        Me.grdConvChan_NAC.HeaderText = "NAC"
-        Me.grdConvChan_NAC.MaxInputLength = 4
-        Me.grdConvChan_NAC.Name = "grdConvChan_NAC"
-        Me.grdConvChan_NAC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.grdConvChan_NAC.Width = 60
-        '
-        'grdConvChan_AudioType
-        '
-        Me.grdConvChan_AudioType.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AudioType.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AudioType.HeaderText = "AudioType"
-        Me.grdConvChan_AudioType.Name = "grdConvChan_AudioType"
-        Me.grdConvChan_AudioType.Width = 75
-        '
-        'grdConvChan_AltTone
-        '
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.grdConvChan_AltTone.DefaultCellStyle = DataGridViewCellStyle5
-        Me.grdConvChan_AltTone.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AltTone.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AltTone.HeaderText = "Alt Tone"
-        Me.grdConvChan_AltTone.Name = "grdConvChan_AltTone"
-        Me.grdConvChan_AltTone.Width = 60
-        '
-        'grdConvChan_AltLevel
-        '
-        Me.grdConvChan_AltLevel.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AltLevel.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AltLevel.HeaderText = "Alt Level"
-        Me.grdConvChan_AltLevel.Name = "grdConvChan_AltLevel"
-        Me.grdConvChan_AltLevel.ToolTipText = "Alert tone volume level. 0 = Auto"
-        Me.grdConvChan_AltLevel.Width = 60
-        '
-        'grdConvChan_AltColor
-        '
-        Me.grdConvChan_AltColor.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AltColor.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AltColor.HeaderText = "Alt Color"
-        Me.grdConvChan_AltColor.Name = "grdConvChan_AltColor"
-        Me.grdConvChan_AltColor.Width = 60
-        '
-        'grdConvChan_AltPattern
-        '
-        Me.grdConvChan_AltPattern.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AltPattern.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AltPattern.HeaderText = "Alt Pat"
-        Me.grdConvChan_AltPattern.Name = "grdConvChan_AltPattern"
-        Me.grdConvChan_AltPattern.Width = 60
-        '
-        'grdConvChan_VolOffset
-        '
-        Me.grdConvChan_VolOffset.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_VolOffset.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_VolOffset.HeaderText = "Vol Adj"
-        Me.grdConvChan_VolOffset.Name = "grdConvChan_VolOffset"
-        Me.grdConvChan_VolOffset.Width = 60
-        '
-        'grdConvChan_NumTag
-        '
-        Me.grdConvChan_NumTag.HeaderText = "Num Tag"
-        Me.grdConvChan_NumTag.MaxInputLength = 4
-        Me.grdConvChan_NumTag.Name = "grdConvChan_NumTag"
-        Me.grdConvChan_NumTag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.grdConvChan_NumTag.Width = 65
-        '
-        'grdConvChan_RecOut
-        '
-        Me.grdConvChan_RecOut.HeaderText = "Rec Out"
-        Me.grdConvChan_RecOut.Name = "grdConvChan_RecOut"
-        Me.grdConvChan_RecOut.Width = 60
-        '
-        'grdConvChan_Comment
-        '
-        Me.grdConvChan_Comment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.grdConvChan_Comment.HeaderText = "Comment"
-        Me.grdConvChan_Comment.MaxInputLength = 255
-        Me.grdConvChan_Comment.MinimumWidth = 100
-        Me.grdConvChan_Comment.Name = "grdConvChan_Comment"
-        Me.grdConvChan_Comment.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
         'txtConvGroupName
         '
         Me.txtConvGroupName.AcceptsReturn = True
@@ -5157,13 +5010,13 @@
         'mnuExportSngSys
         '
         Me.mnuExportSngSys.Name = "mnuExportSngSys"
-        Me.mnuExportSngSys.Size = New System.Drawing.Size(146, 22)
+        Me.mnuExportSngSys.Size = New System.Drawing.Size(145, 22)
         Me.mnuExportSngSys.Text = "This System..."
         '
         'mnuExportAllSys
         '
         Me.mnuExportAllSys.Name = "mnuExportAllSys"
-        Me.mnuExportAllSys.Size = New System.Drawing.Size(146, 22)
+        Me.mnuExportAllSys.Size = New System.Drawing.Size(145, 22)
         Me.mnuExportAllSys.Text = "A&ll Systems..."
         '
         'mnuShowStat
@@ -5278,7 +5131,7 @@
         '
         Me.mnuSortByName.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSortByNameAscending, Me.mnuSortByNameDescending})
         Me.mnuSortByName.Name = "mnuSortByName"
-        Me.mnuSortByName.Size = New System.Drawing.Size(175, 22)
+        Me.mnuSortByName.Size = New System.Drawing.Size(174, 22)
         Me.mnuSortByName.Text = "By Name"
         '
         'mnuSortByNameAscending
@@ -5299,7 +5152,7 @@
         '
         Me.mnuSortByFreq.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuSortByFreqAscending, Me.mnuSortByFreqDescending})
         Me.mnuSortByFreq.Name = "mnuSortByFreq"
-        Me.mnuSortByFreq.Size = New System.Drawing.Size(175, 22)
+        Me.mnuSortByFreq.Size = New System.Drawing.Size(174, 22)
         Me.mnuSortByFreq.Text = "By Frequency/TGID"
         '
         'mnuSortByFreqAscending
@@ -5426,7 +5279,7 @@
         '
         Me.mnuTools.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuEditSysQK, Me.mnuEditFreqFill, Me.mnuToolsAutoOpt, Me.mnuDupFind, Me.mnuToolsChanLockout, Me.mnuToolsScanner, Me.mnuLockoutAll, Me.mnuUnlockAll, Me.LetsDoItToolStripMenuItem})
         Me.mnuTools.Name = "mnuTools"
-        Me.mnuTools.Size = New System.Drawing.Size(47, 20)
+        Me.mnuTools.Size = New System.Drawing.Size(46, 20)
         Me.mnuTools.Text = "&Tools"
         '
         'mnuEditSysQK
@@ -5519,34 +5372,34 @@
         '
         Me.mnuHighlight.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuHighlightTrunkSys, Me.mnuHighlightSite, Me.mnuGroupHighlight})
         Me.mnuHighlight.Name = "mnuHighlight"
-        Me.mnuHighlight.Size = New System.Drawing.Size(196, 22)
+        Me.mnuHighlight.Size = New System.Drawing.Size(195, 22)
         Me.mnuHighlight.Text = "Highlight"
         '
         'mnuHighlightTrunkSys
         '
         Me.mnuHighlightTrunkSys.Name = "mnuHighlightTrunkSys"
-        Me.mnuHighlightTrunkSys.Size = New System.Drawing.Size(182, 22)
+        Me.mnuHighlightTrunkSys.Size = New System.Drawing.Size(181, 22)
         Me.mnuHighlightTrunkSys.Text = "Trunk S&ystems"
         '
         'mnuHighlightSite
         '
         Me.mnuHighlightSite.Name = "mnuHighlightSite"
         Me.mnuHighlightSite.ShortcutKeys = CType((System.Windows.Forms.Keys.Shift Or System.Windows.Forms.Keys.F2), System.Windows.Forms.Keys)
-        Me.mnuHighlightSite.Size = New System.Drawing.Size(182, 22)
+        Me.mnuHighlightSite.Size = New System.Drawing.Size(181, 22)
         Me.mnuHighlightSite.Text = "&Trunk Sites"
         '
         'mnuGroupHighlight
         '
         Me.mnuGroupHighlight.Name = "mnuGroupHighlight"
         Me.mnuGroupHighlight.ShortcutKeys = System.Windows.Forms.Keys.F3
-        Me.mnuGroupHighlight.Size = New System.Drawing.Size(182, 22)
+        Me.mnuGroupHighlight.Size = New System.Drawing.Size(181, 22)
         Me.mnuGroupHighlight.Text = "&Talk Groups"
         '
         'mnuUseQuickDraw
         '
         Me.mnuUseQuickDraw.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuQuickDrawOff, Me.mnuQuickDrawOn, Me.mnuQuickDrawAUto})
         Me.mnuUseQuickDraw.Name = "mnuUseQuickDraw"
-        Me.mnuUseQuickDraw.Size = New System.Drawing.Size(196, 22)
+        Me.mnuUseQuickDraw.Size = New System.Drawing.Size(195, 22)
         Me.mnuUseQuickDraw.Text = "&Auto Expand Systems"
         '
         'mnuQuickDrawOff
@@ -5571,21 +5424,21 @@
         '
         Me.mnuShowSysType.Name = "mnuShowSysType"
         Me.mnuShowSysType.ShortcutKeys = System.Windows.Forms.Keys.F5
-        Me.mnuShowSysType.Size = New System.Drawing.Size(196, 22)
+        Me.mnuShowSysType.Size = New System.Drawing.Size(195, 22)
         Me.mnuShowSysType.Text = "Show System &Types"
         '
         'mnuShowQK
         '
         Me.mnuShowQK.Name = "mnuShowQK"
         Me.mnuShowQK.ShortcutKeys = System.Windows.Forms.Keys.F6
-        Me.mnuShowQK.Size = New System.Drawing.Size(196, 22)
+        Me.mnuShowQK.Size = New System.Drawing.Size(195, 22)
         Me.mnuShowQK.Text = "Show &Quick Keys"
         '
         'mnuTreeSort
         '
         Me.mnuTreeSort.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuTreeSortName, Me.mnuTreeSortQK, Me.mnuTreeSortType, Me.mnuTreeSortNone})
         Me.mnuTreeSort.Name = "mnuTreeSort"
-        Me.mnuTreeSort.Size = New System.Drawing.Size(196, 22)
+        Me.mnuTreeSort.Size = New System.Drawing.Size(195, 22)
         Me.mnuTreeSort.Text = "S&ort By"
         '
         'mnuTreeSortName
@@ -5934,6 +5787,154 @@
         Me.SplitContainer1.SplitterDistance = 167
         Me.SplitContainer1.TabIndex = 224
         '
+        'grdConvChan_Display
+        '
+        Me.grdConvChan_Display.HeaderText = "Display"
+        Me.grdConvChan_Display.MaxInputLength = 16
+        Me.grdConvChan_Display.Name = "grdConvChan_Display"
+        Me.grdConvChan_Display.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic
+        Me.grdConvChan_Display.Width = 140
+        '
+        'grdConvChan_Freq
+        '
+        Me.grdConvChan_Freq.HeaderText = "Frequency"
+        Me.grdConvChan_Freq.MaxInputLength = 15
+        Me.grdConvChan_Freq.Name = "grdConvChan_Freq"
+        Me.grdConvChan_Freq.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.grdConvChan_Freq.Width = 80
+        '
+        'grdConvChan_LO
+        '
+        Me.grdConvChan_LO.HeaderText = "L/O"
+        Me.grdConvChan_LO.Name = "grdConvChan_LO"
+        Me.grdConvChan_LO.Width = 40
+        '
+        'grdConvChan_Tone
+        '
+        Me.grdConvChan_Tone.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_Tone.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_Tone.HeaderText = "Tone"
+        Me.grdConvChan_Tone.Name = "grdConvChan_Tone"
+        Me.grdConvChan_Tone.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grdConvChan_Tone.Width = 70
+        '
+        'grdConvChan_ToneLO
+        '
+        Me.grdConvChan_ToneLO.HeaderText = "Tone LO"
+        Me.grdConvChan_ToneLO.Name = "grdConvChan_ToneLO"
+        Me.grdConvChan_ToneLO.Width = 60
+        '
+        'grdConvChan_Att
+        '
+        Me.grdConvChan_Att.HeaderText = "Att"
+        Me.grdConvChan_Att.Name = "grdConvChan_Att"
+        Me.grdConvChan_Att.Width = 40
+        '
+        'grdConvChan_Pri
+        '
+        Me.grdConvChan_Pri.HeaderText = "Pri"
+        Me.grdConvChan_Pri.Name = "grdConvChan_Pri"
+        Me.grdConvChan_Pri.Width = 40
+        '
+        'grdConvChan_Step
+        '
+        Me.grdConvChan_Step.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_Step.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_Step.HeaderText = "Step"
+        Me.grdConvChan_Step.Name = "grdConvChan_Step"
+        Me.grdConvChan_Step.Width = 60
+        '
+        'grdCOnvChan_MOD
+        '
+        Me.grdCOnvChan_MOD.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdCOnvChan_MOD.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdCOnvChan_MOD.HeaderText = "Mod"
+        Me.grdCOnvChan_MOD.Name = "grdCOnvChan_MOD"
+        Me.grdCOnvChan_MOD.Width = 55
+        '
+        'grdConvChan_NAC
+        '
+        Me.grdConvChan_NAC.HeaderText = "NAC / CC"
+        Me.grdConvChan_NAC.MaxInputLength = 4
+        Me.grdConvChan_NAC.Name = "grdConvChan_NAC"
+        Me.grdConvChan_NAC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.grdConvChan_NAC.ToolTipText = "Enter P25 NAC (0-FFF) or DMR Color Code (0 to 15 represented by 1000 to 100F)"
+        Me.grdConvChan_NAC.Width = 60
+        '
+        'grdConvChan_AudioType
+        '
+        Me.grdConvChan_AudioType.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AudioType.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AudioType.HeaderText = "AudioType"
+        Me.grdConvChan_AudioType.Name = "grdConvChan_AudioType"
+        Me.grdConvChan_AudioType.Width = 75
+        '
+        'grdConvChan_AltTone
+        '
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.grdConvChan_AltTone.DefaultCellStyle = DataGridViewCellStyle5
+        Me.grdConvChan_AltTone.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AltTone.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AltTone.HeaderText = "Alt Tone"
+        Me.grdConvChan_AltTone.Name = "grdConvChan_AltTone"
+        Me.grdConvChan_AltTone.Width = 60
+        '
+        'grdConvChan_AltLevel
+        '
+        Me.grdConvChan_AltLevel.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AltLevel.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AltLevel.HeaderText = "Alt Level"
+        Me.grdConvChan_AltLevel.Name = "grdConvChan_AltLevel"
+        Me.grdConvChan_AltLevel.ToolTipText = "Alert tone volume level. 0 = Auto"
+        Me.grdConvChan_AltLevel.Width = 60
+        '
+        'grdConvChan_AltColor
+        '
+        Me.grdConvChan_AltColor.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AltColor.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AltColor.HeaderText = "Alt Color"
+        Me.grdConvChan_AltColor.Name = "grdConvChan_AltColor"
+        Me.grdConvChan_AltColor.Width = 60
+        '
+        'grdConvChan_AltPattern
+        '
+        Me.grdConvChan_AltPattern.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AltPattern.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AltPattern.HeaderText = "Alt Pat"
+        Me.grdConvChan_AltPattern.Name = "grdConvChan_AltPattern"
+        Me.grdConvChan_AltPattern.Width = 60
+        '
+        'grdConvChan_VolOffset
+        '
+        Me.grdConvChan_VolOffset.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_VolOffset.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_VolOffset.HeaderText = "Vol Adj"
+        Me.grdConvChan_VolOffset.Name = "grdConvChan_VolOffset"
+        Me.grdConvChan_VolOffset.Width = 60
+        '
+        'grdConvChan_NumTag
+        '
+        Me.grdConvChan_NumTag.HeaderText = "Num Tag"
+        Me.grdConvChan_NumTag.MaxInputLength = 4
+        Me.grdConvChan_NumTag.Name = "grdConvChan_NumTag"
+        Me.grdConvChan_NumTag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.grdConvChan_NumTag.Width = 65
+        '
+        'grdConvChan_RecOut
+        '
+        Me.grdConvChan_RecOut.HeaderText = "Rec Out"
+        Me.grdConvChan_RecOut.Name = "grdConvChan_RecOut"
+        Me.grdConvChan_RecOut.Width = 60
+        '
+        'grdConvChan_Comment
+        '
+        Me.grdConvChan_Comment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.grdConvChan_Comment.HeaderText = "Comment"
+        Me.grdConvChan_Comment.MaxInputLength = 255
+        Me.grdConvChan_Comment.MinimumWidth = 100
+        Me.grdConvChan_Comment.Name = "grdConvChan_Comment"
+        Me.grdConvChan_Comment.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
         'lblSiteNote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6166,27 +6167,27 @@
     Friend WithEvents grdTGID_NumTag As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents colTapeOut As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents txtTGIDComment As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents grdConvChan_Display As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents grdConvChan_Freq As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents grdConvChan_LO As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents grdConvChan_Tone As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents grdConvChan_ToneLO As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents grdConvChan_Att As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents grdConvChan_Pri As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents grdConvChan_Step As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents grdCOnvChan_MOD As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents grdConvChan_NAC As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents grdConvChan_AudioType As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents grdConvChan_AltTone As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents grdConvChan_AltLevel As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents grdConvChan_AltColor As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents grdConvChan_AltPattern As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents grdConvChan_VolOffset As System.Windows.Forms.DataGridViewComboBoxColumn
-    Friend WithEvents grdConvChan_NumTag As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents grdConvChan_RecOut As System.Windows.Forms.DataGridViewCheckBoxColumn
-    Friend WithEvents grdConvChan_Comment As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents mnuEditSelectAll As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents LetsDoItToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SplitContainer1 As System.Windows.Forms.SplitContainer
+    Friend WithEvents grdConvChan_Display As DataGridViewTextBoxColumn
+    Friend WithEvents grdConvChan_Freq As DataGridViewTextBoxColumn
+    Friend WithEvents grdConvChan_LO As DataGridViewCheckBoxColumn
+    Friend WithEvents grdConvChan_Tone As DataGridViewComboBoxColumn
+    Friend WithEvents grdConvChan_ToneLO As DataGridViewCheckBoxColumn
+    Friend WithEvents grdConvChan_Att As DataGridViewCheckBoxColumn
+    Friend WithEvents grdConvChan_Pri As DataGridViewCheckBoxColumn
+    Friend WithEvents grdConvChan_Step As DataGridViewComboBoxColumn
+    Friend WithEvents grdCOnvChan_MOD As DataGridViewComboBoxColumn
+    Friend WithEvents grdConvChan_NAC As DataGridViewTextBoxColumn
+    Friend WithEvents grdConvChan_AudioType As DataGridViewComboBoxColumn
+    Friend WithEvents grdConvChan_AltTone As DataGridViewComboBoxColumn
+    Friend WithEvents grdConvChan_AltLevel As DataGridViewComboBoxColumn
+    Friend WithEvents grdConvChan_AltColor As DataGridViewComboBoxColumn
+    Friend WithEvents grdConvChan_AltPattern As DataGridViewComboBoxColumn
+    Friend WithEvents grdConvChan_VolOffset As DataGridViewComboBoxColumn
+    Friend WithEvents grdConvChan_NumTag As DataGridViewTextBoxColumn
+    Friend WithEvents grdConvChan_RecOut As DataGridViewCheckBoxColumn
+    Friend WithEvents grdConvChan_Comment As DataGridViewTextBoxColumn
 #End Region
 End Class
