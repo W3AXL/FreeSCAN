@@ -256,4 +256,8 @@ CriticalError:
         Call FormWait(0, 0, 0)
         intSin = MsgBox("All programming has been cleared.", MsgBoxStyle.Information)
     End Sub
+
+    Private Sub frmQKEdit_load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+    End Sub
 End Class

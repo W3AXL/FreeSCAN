@@ -26,6 +26,7 @@ Public Class frmBandPlan
     End Sub
 
     Private Sub frmBandPlan_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
         'Ready the combo boxes
         Dim x As Integer = 0
         Dim strBuff As String

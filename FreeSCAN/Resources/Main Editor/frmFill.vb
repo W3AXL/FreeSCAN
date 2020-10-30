@@ -135,27 +135,28 @@ Friend Class frmFill
         blnChgSaved = False
         lblSiteNote.DispStat(intCnt - 1 & " frequencies created.")
     End Sub
-	
-	Private Sub frmFill_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
-		'initialize everything
+
+    Private Sub frmFill_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+        'initialize everything
         Dim x, strMode As String
-		cmbStepSize.Items.Clear()
-		
-		x = 1
-		
-		Do Until x = 9
+        cmbStepSize.Items.Clear()
+
+        x = 1
+
+        Do Until x = 9
             strMode = Val(CStr(StepSize(x, 1) / 100))
             x = x + 1
             cmbStepSize.Items.Add((strMode))
         Loop
-		cmbStepSize.SelectedIndex = 4
-		txtStartFreq.Text = "25"
-		txtNumFreq.Text = "10"
-	End Sub
-	
-	'UPGRADE_NOTE: Form_Terminate was upgraded to Form_Terminate_Renamed. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="A9E4979A-37FA-4718-9994-97DD76ED70A7"'
-	'UPGRADE_WARNING: frmFill event Form.Terminate has a new behavior. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'
-	Private Sub Form_Terminate_Renamed()
+        cmbStepSize.SelectedIndex = 4
+        txtStartFreq.Text = "25"
+        txtNumFreq.Text = "10"
+    End Sub
+
+    'UPGRADE_NOTE: Form_Terminate was upgraded to Form_Terminate_Renamed. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="A9E4979A-37FA-4718-9994-97DD76ED70A7"'
+    'UPGRADE_WARNING: frmFill event Form.Terminate has a new behavior. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'
+    Private Sub Form_Terminate_Renamed()
 		Call cmdCancel_Click(cmdCancel, New System.EventArgs())
     End Sub
 

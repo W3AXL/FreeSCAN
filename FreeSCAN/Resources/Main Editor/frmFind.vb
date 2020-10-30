@@ -212,4 +212,10 @@ Friend Class frmFind
     Private Sub frmFind_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         bRestart = False
     End Sub
+
+    'Set Icon from Global Icon
+    Private Sub frmFind_load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+    End Sub
+
 End Class

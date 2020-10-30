@@ -24,11 +24,11 @@
 	'It can be modified using the Windows Form Designer.
 	'Do not modify it using the code editor.
 	<System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSplash))
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Picture1 = New System.Windows.Forms.Panel
-        Me.slogan = New System.Windows.Forms.Label
+        Me.Picture1 = New System.Windows.Forms.Panel()
+        Me.slogan = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Picture1.SuspendLayout()
         Me.SuspendLayout()
@@ -54,13 +54,14 @@
         Me.slogan.BackColor = System.Drawing.Color.Transparent
         Me.slogan.Cursor = System.Windows.Forms.Cursors.Default
         Me.slogan.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.slogan.ForeColor = System.Drawing.Color.Black
-        Me.slogan.Location = New System.Drawing.Point(7, 97)
+        Me.slogan.ForeColor = System.Drawing.Color.LightGray
+        Me.slogan.Location = New System.Drawing.Point(10, 7)
         Me.slogan.Name = "slogan"
         Me.slogan.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.slogan.Size = New System.Drawing.Size(197, 67)
+        Me.slogan.Size = New System.Drawing.Size(587, 67)
         Me.slogan.TabIndex = 1
-        Me.slogan.Text = """From My Parent's Base To Yours!"""
+        Me.slogan.Text = """From My Parent's Basement To Yours!"""
+        Me.slogan.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'Timer1
         '
@@ -77,7 +78,7 @@
         Me.Controls.Add(Me.Picture1)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.KeyPreview = True
         Me.Location = New System.Drawing.Point(17, 94)
         Me.MaximizeBox = False
@@ -90,5 +91,5 @@
         Me.ResumeLayout(False)
 
     End Sub
-#End Region 
+#End Region
 End Class

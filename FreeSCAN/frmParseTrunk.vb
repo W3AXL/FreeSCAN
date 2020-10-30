@@ -179,13 +179,14 @@ Friend Class frmParseTrunk
         strBuff = CStr(MsgBox(grdField.Rowcount & " trunk frequencies have been imported successfully.", MsgBoxStyle.Information))
         lblSiteNote.LoadData("TrunkFreq")
     End Sub
-	
-	Private Sub frmParseTrunk_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
-		'initialize combo boxes
+
+    Private Sub frmParseTrunk_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+        'initialize combo boxes
         grdField.Rows.Clear()
-	End Sub
-	
-	Private Sub frmParseTrunk_FormClosed(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
+    End Sub
+
+    Private Sub frmParseTrunk_FormClosed(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
 		cmdClose_Click(cmdClose, New System.EventArgs())
 	End Sub
 End Class

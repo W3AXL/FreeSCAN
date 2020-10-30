@@ -149,46 +149,47 @@ Friend Class frmCOMPort
 	Private Sub cmdRefresh_Click(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles cmdRefresh.Click
 		Call frmCOMPort_Load(Me, New System.EventArgs())
 	End Sub
-	
-	
-	Private Sub frmCOMPort_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
-		Dim i As Short
-		On Error Resume Next
-		'load default values into drop down boxes
-		
-		cmbCOMPort.Items.Clear()
+
+
+    Private Sub frmCOMPort_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+        Dim i As Short
+        On Error Resume Next
+        'load default values into drop down boxes
+
+        cmbCOMPort.Items.Clear()
 
 
         For Each sp As String In My.Computer.Ports.SerialPortNames
             cmbCOMPort.Items.Add(sp)
         Next
 
-		cmbCOMPort.Text = RadioSetting(44)
+        cmbCOMPort.Text = RadioSetting(44)
         chkBeCareful.CheckState = CShort(GetSetting("FreeSCAN", "Settings", "Careful", CStr(1)))
-		If cmbPortSpeed.Items.Count = 0 Then
-			
-			With cmbPortSpeed
-				.Items.Add("4800")
-				.Items.Add("9600")
-				.Items.Add("19200")
-				.Items.Add("38400")
-				.Items.Add("57600")
-				.Items.Add("115200")
-			End With
-			
-			'set default values
-			
-			cmbPortSpeed.Text = RadioSetting(45)
-		End If
-		If cmbCOMPort.Items.Count > 0 Then
-			cmbCOMPort.SelectedIndex = 0
-		Else
-			i = MsgBox("FreeSCAN was unable to detect any available COM ports. Make sure the port is not in use, it is COM15 or less, and that you have USB-COM Port drivers installed if applicable.", MsgBoxStyle.Critical, "Error")
-		End If
-		lblPort.Text = ""
-		lblSpeed.Text = ""
-		lblStat.Text = ""
-	End Sub
+        If cmbPortSpeed.Items.Count = 0 Then
+
+            With cmbPortSpeed
+                .Items.Add("4800")
+                .Items.Add("9600")
+                .Items.Add("19200")
+                .Items.Add("38400")
+                .Items.Add("57600")
+                .Items.Add("115200")
+            End With
+
+            'set default values
+
+            cmbPortSpeed.Text = RadioSetting(45)
+        End If
+        If cmbCOMPort.Items.Count > 0 Then
+            cmbCOMPort.SelectedIndex = 0
+        Else
+            i = MsgBox("FreeSCAN was unable to detect any available COM ports. Make sure the port is not in use, it is COM15 or less, and that you have USB-COM Port drivers installed if applicable.", MsgBoxStyle.Critical, "Error")
+        End If
+        lblPort.Text = ""
+        lblSpeed.Text = ""
+        lblStat.Text = ""
+    End Sub
 
     Private Sub cmbCOMPort_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmbCOMPort.SelectedIndexChanged
 

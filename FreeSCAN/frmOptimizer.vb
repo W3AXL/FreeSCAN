@@ -463,8 +463,12 @@ Friend Class frmOptimizer
 		Me.Visible = False
 		frmViewInvalids.Visible = False
 	End Sub
-	
-	Private Sub frmOptimizer_FormClosed(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
-		Call FormShutDown()
-	End Sub
+
+    Private Sub frmOptimizer_FormClosed(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
+        Call FormShutDown()
+    End Sub
+
+    Private Sub frmOptimizer_load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+    End Sub
 End Class

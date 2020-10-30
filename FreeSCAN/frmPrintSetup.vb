@@ -1195,9 +1195,10 @@ TerminateSub:
         'select all
         Call cmdCheckAll_Click(Nothing, Nothing)
     End Sub
-	
-	
-	Private Sub frmPrintSetup_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+
+
+    Private Sub frmPrintSetup_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
 
         With lstConv.Items
             .Add("Display")

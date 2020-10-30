@@ -872,15 +872,16 @@ abort:
         Call cmdClose_Click(Nothing, Nothing)
 
     End Sub
-	Sub frmImport_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
-		cmdImportSys.Enabled = False
-		TreeView.Nodes.Clear()
-		lblFileName.Text = "(None)"
-		strFilename = ""
-		Call ShowStat(0, 0, 0, 0, 0)
-	End Sub
-	
-	Private Sub treeview_AfterCheck(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.TreeViewEventArgs) Handles treeview.AfterCheck
+    Sub frmImport_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+        cmdImportSys.Enabled = False
+        treeview.Nodes.Clear()
+        lblFileName.Text = "(None)"
+        strFilename = ""
+        Call ShowStat(0, 0, 0, 0, 0)
+    End Sub
+
+    Private Sub treeview_AfterCheck(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.TreeViewEventArgs) Handles treeview.AfterCheck
         If blnbusy Then Exit Sub
         blnbusy = True
         Dim Node As System.Windows.Forms.TreeNode = eventArgs.Node

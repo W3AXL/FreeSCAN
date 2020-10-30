@@ -54,8 +54,12 @@ Friend Class frmNewSite
         txtSysName.Focus()
 	End Sub
 
-    Private Sub txtSysName_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtSysName.TextChanged
+	Private Sub txtSysName_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtSysName.TextChanged
 
-    End Sub
+	End Sub
+
+	Private Sub frmNewSite_load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+		Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+	End Sub
 
 End Class

@@ -106,4 +106,8 @@ Friend Class frmJust
         blnChgSaved = False
         Call cmdCancel_Click(cmdCancel, New System.EventArgs())
     End Sub
+
+    Private Sub frmJust_load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+    End Sub
 End Class

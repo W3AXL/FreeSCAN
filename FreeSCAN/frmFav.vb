@@ -255,8 +255,13 @@ Friend Class frmFav
 	Private Sub Form_Terminate_Renamed()
 		Call cmdClose_Click(cmdClose, New System.EventArgs())
 	End Sub
-	
+
 	Private Sub frmFav_FormClosed(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
 		Call cmdClose_Click(cmdClose, New System.EventArgs())
 	End Sub
+
+	Private Sub frmConsole_load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+		Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+	End Sub
+
 End Class

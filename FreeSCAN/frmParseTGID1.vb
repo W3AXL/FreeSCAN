@@ -398,9 +398,10 @@ Friend Class frmParseTGID
     Function GridData(ByVal intRow As Integer, ByVal intCol As Integer) As String
         GridData = grdField(intCol, intRow).Value
     End Function
-	
-	Private Sub frmParseTGID_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
-		'initialize combo boxes
+
+    Private Sub frmParseTGID_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+        'initialize combo boxes
         Dim cmbField(7) As ComboBox
         Dim cnt As Integer
         cmbField(0) = _cmbField_0
@@ -424,11 +425,11 @@ Friend Class frmParseTGID
             cmbField(cnt).Items.Add("Name+Comment")
 
         Next
-	End Sub
-	
-	'UPGRADE_NOTE: Form_Terminate was upgraded to Form_Terminate_Renamed. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="A9E4979A-37FA-4718-9994-97DD76ED70A7"'
-	'UPGRADE_WARNING: frmParseTGID event Form.Terminate has a new behavior. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'
-	Private Sub Form_Terminate_Renamed()
+    End Sub
+
+    'UPGRADE_NOTE: Form_Terminate was upgraded to Form_Terminate_Renamed. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="A9E4979A-37FA-4718-9994-97DD76ED70A7"'
+    'UPGRADE_WARNING: frmParseTGID event Form.Terminate has a new behavior. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'
+    Private Sub Form_Terminate_Renamed()
 		cmdClose_Click(cmdClose, New System.EventArgs())
 	End Sub
 	

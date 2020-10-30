@@ -165,10 +165,14 @@ Friend Class frmSysQK
 		
 		
 	End Sub
-	
+
 	'UPGRADE_NOTE: Form_Terminate was upgraded to Form_Terminate_Renamed. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="A9E4979A-37FA-4718-9994-97DD76ED70A7"'
 	'UPGRADE_WARNING: frmSysQK event Form.Terminate has a new behavior. Click for more: 'ms-help://MS.VSCC.v80/dv_commoner/local/redirect.htm?keyword="6BA9B8D2-2A32-4B6E-8D36-44949974A5B4"'
 	Private Sub Form_Terminate_Renamed()
 		Call cmdCancel_Click(cmdCancel, New System.EventArgs())
+	End Sub
+
+	Private Sub frmSysQK_load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+		Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
 	End Sub
 End Class

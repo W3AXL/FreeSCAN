@@ -2459,7 +2459,7 @@ criticerror:
     End Sub
 
     Private Sub Form1_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
-
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
         ShowComSettings()
         LoadPrefs()
         InitCOMPort()

@@ -8,7 +8,8 @@ Friend Class frmAbout
 		Me.Close()
 	End Sub
 
-    Private Sub frmAbout_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Call frmSplash.NewSlogan()
-    End Sub
+	Private Sub frmAbout_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+		Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+		Call frmSplash.NewSlogan()
+	End Sub
 End Class

@@ -570,6 +570,25 @@
         Me.lblCnvGrpRange = New System.Windows.Forms.Label()
         Me._cmdFreeGQK_0 = New System.Windows.Forms.Button()
         Me.grdConvChan = New System.Windows.Forms.DataGridView()
+        Me.grdConvChan_Display = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grdConvChan_Freq = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grdConvChan_LO = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Tone = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_ToneLO = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Att = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Pri = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Step = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdCOnvChan_MOD = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_NAC = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grdConvChan_AudioType = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_AltTone = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_AltLevel = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_AltColor = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_AltPattern = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_VolOffset = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.grdConvChan_NumTag = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.grdConvChan_RecOut = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.grdConvChan_Comment = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.txtConvGroupName = New System.Windows.Forms.TextBox()
         Me.chkConvGroupLockout = New System.Windows.Forms.CheckBox()
         Me._Label28_37 = New System.Windows.Forms.Label()
@@ -750,25 +769,6 @@
         Me.DownloadScannerToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.ControlScannerToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.grdConvChan_Display = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grdConvChan_Freq = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grdConvChan_LO = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Tone = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_ToneLO = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Att = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Pri = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Step = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdCOnvChan_MOD = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_NAC = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grdConvChan_AudioType = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_AltTone = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_AltLevel = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_AltColor = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_AltPattern = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_VolOffset = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.grdConvChan_NumTag = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.grdConvChan_RecOut = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.grdConvChan_Comment = New System.Windows.Forms.DataGridViewTextBoxColumn()
         _Label28_17 = New System.Windows.Forms.Label()
         _Label28_18 = New System.Windows.Forms.Label()
         _Label28_6 = New System.Windows.Forms.Label()
@@ -4600,6 +4600,154 @@
         Me.grdConvChan.Size = New System.Drawing.Size(351, 45)
         Me.grdConvChan.TabIndex = 267
         '
+        'grdConvChan_Display
+        '
+        Me.grdConvChan_Display.HeaderText = "Display"
+        Me.grdConvChan_Display.MaxInputLength = 16
+        Me.grdConvChan_Display.Name = "grdConvChan_Display"
+        Me.grdConvChan_Display.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic
+        Me.grdConvChan_Display.Width = 140
+        '
+        'grdConvChan_Freq
+        '
+        Me.grdConvChan_Freq.HeaderText = "Frequency"
+        Me.grdConvChan_Freq.MaxInputLength = 15
+        Me.grdConvChan_Freq.Name = "grdConvChan_Freq"
+        Me.grdConvChan_Freq.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.grdConvChan_Freq.Width = 80
+        '
+        'grdConvChan_LO
+        '
+        Me.grdConvChan_LO.HeaderText = "L/O"
+        Me.grdConvChan_LO.Name = "grdConvChan_LO"
+        Me.grdConvChan_LO.Width = 40
+        '
+        'grdConvChan_Tone
+        '
+        Me.grdConvChan_Tone.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_Tone.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_Tone.HeaderText = "Tone"
+        Me.grdConvChan_Tone.Name = "grdConvChan_Tone"
+        Me.grdConvChan_Tone.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grdConvChan_Tone.Width = 70
+        '
+        'grdConvChan_ToneLO
+        '
+        Me.grdConvChan_ToneLO.HeaderText = "Tone LO"
+        Me.grdConvChan_ToneLO.Name = "grdConvChan_ToneLO"
+        Me.grdConvChan_ToneLO.Width = 60
+        '
+        'grdConvChan_Att
+        '
+        Me.grdConvChan_Att.HeaderText = "Att"
+        Me.grdConvChan_Att.Name = "grdConvChan_Att"
+        Me.grdConvChan_Att.Width = 40
+        '
+        'grdConvChan_Pri
+        '
+        Me.grdConvChan_Pri.HeaderText = "Pri"
+        Me.grdConvChan_Pri.Name = "grdConvChan_Pri"
+        Me.grdConvChan_Pri.Width = 40
+        '
+        'grdConvChan_Step
+        '
+        Me.grdConvChan_Step.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_Step.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_Step.HeaderText = "Step"
+        Me.grdConvChan_Step.Name = "grdConvChan_Step"
+        Me.grdConvChan_Step.Width = 60
+        '
+        'grdCOnvChan_MOD
+        '
+        Me.grdCOnvChan_MOD.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdCOnvChan_MOD.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdCOnvChan_MOD.HeaderText = "Mod"
+        Me.grdCOnvChan_MOD.Name = "grdCOnvChan_MOD"
+        Me.grdCOnvChan_MOD.Width = 55
+        '
+        'grdConvChan_NAC
+        '
+        Me.grdConvChan_NAC.HeaderText = "NAC / CC"
+        Me.grdConvChan_NAC.MaxInputLength = 4
+        Me.grdConvChan_NAC.Name = "grdConvChan_NAC"
+        Me.grdConvChan_NAC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.grdConvChan_NAC.ToolTipText = "Enter P25 NAC (0-FFF) or DMR Color Code (0 to 15 represented by 1000 to 100F)"
+        Me.grdConvChan_NAC.Width = 60
+        '
+        'grdConvChan_AudioType
+        '
+        Me.grdConvChan_AudioType.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AudioType.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AudioType.HeaderText = "AudioType"
+        Me.grdConvChan_AudioType.Name = "grdConvChan_AudioType"
+        Me.grdConvChan_AudioType.Width = 75
+        '
+        'grdConvChan_AltTone
+        '
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        Me.grdConvChan_AltTone.DefaultCellStyle = DataGridViewCellStyle5
+        Me.grdConvChan_AltTone.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AltTone.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AltTone.HeaderText = "Alt Tone"
+        Me.grdConvChan_AltTone.Name = "grdConvChan_AltTone"
+        Me.grdConvChan_AltTone.Width = 60
+        '
+        'grdConvChan_AltLevel
+        '
+        Me.grdConvChan_AltLevel.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AltLevel.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AltLevel.HeaderText = "Alt Level"
+        Me.grdConvChan_AltLevel.Name = "grdConvChan_AltLevel"
+        Me.grdConvChan_AltLevel.ToolTipText = "Alert tone volume level. 0 = Auto"
+        Me.grdConvChan_AltLevel.Width = 60
+        '
+        'grdConvChan_AltColor
+        '
+        Me.grdConvChan_AltColor.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AltColor.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AltColor.HeaderText = "Alt Color"
+        Me.grdConvChan_AltColor.Name = "grdConvChan_AltColor"
+        Me.grdConvChan_AltColor.Width = 60
+        '
+        'grdConvChan_AltPattern
+        '
+        Me.grdConvChan_AltPattern.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_AltPattern.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_AltPattern.HeaderText = "Alt Pat"
+        Me.grdConvChan_AltPattern.Name = "grdConvChan_AltPattern"
+        Me.grdConvChan_AltPattern.Width = 60
+        '
+        'grdConvChan_VolOffset
+        '
+        Me.grdConvChan_VolOffset.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
+        Me.grdConvChan_VolOffset.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.grdConvChan_VolOffset.HeaderText = "Vol Adj"
+        Me.grdConvChan_VolOffset.Name = "grdConvChan_VolOffset"
+        Me.grdConvChan_VolOffset.Width = 60
+        '
+        'grdConvChan_NumTag
+        '
+        Me.grdConvChan_NumTag.HeaderText = "Num Tag"
+        Me.grdConvChan_NumTag.MaxInputLength = 4
+        Me.grdConvChan_NumTag.Name = "grdConvChan_NumTag"
+        Me.grdConvChan_NumTag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        Me.grdConvChan_NumTag.Width = 65
+        '
+        'grdConvChan_RecOut
+        '
+        Me.grdConvChan_RecOut.HeaderText = "Rec Out"
+        Me.grdConvChan_RecOut.Name = "grdConvChan_RecOut"
+        Me.grdConvChan_RecOut.Width = 60
+        '
+        'grdConvChan_Comment
+        '
+        Me.grdConvChan_Comment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.grdConvChan_Comment.HeaderText = "Comment"
+        Me.grdConvChan_Comment.MaxInputLength = 255
+        Me.grdConvChan_Comment.MinimumWidth = 100
+        Me.grdConvChan_Comment.Name = "grdConvChan_Comment"
+        Me.grdConvChan_Comment.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
+        '
         'txtConvGroupName
         '
         Me.txtConvGroupName.AcceptsReturn = True
@@ -5786,154 +5934,6 @@
         Me.SplitContainer1.Size = New System.Drawing.Size(823, 669)
         Me.SplitContainer1.SplitterDistance = 167
         Me.SplitContainer1.TabIndex = 224
-        '
-        'grdConvChan_Display
-        '
-        Me.grdConvChan_Display.HeaderText = "Display"
-        Me.grdConvChan_Display.MaxInputLength = 16
-        Me.grdConvChan_Display.Name = "grdConvChan_Display"
-        Me.grdConvChan_Display.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic
-        Me.grdConvChan_Display.Width = 140
-        '
-        'grdConvChan_Freq
-        '
-        Me.grdConvChan_Freq.HeaderText = "Frequency"
-        Me.grdConvChan_Freq.MaxInputLength = 15
-        Me.grdConvChan_Freq.Name = "grdConvChan_Freq"
-        Me.grdConvChan_Freq.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.grdConvChan_Freq.Width = 80
-        '
-        'grdConvChan_LO
-        '
-        Me.grdConvChan_LO.HeaderText = "L/O"
-        Me.grdConvChan_LO.Name = "grdConvChan_LO"
-        Me.grdConvChan_LO.Width = 40
-        '
-        'grdConvChan_Tone
-        '
-        Me.grdConvChan_Tone.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_Tone.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_Tone.HeaderText = "Tone"
-        Me.grdConvChan_Tone.Name = "grdConvChan_Tone"
-        Me.grdConvChan_Tone.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grdConvChan_Tone.Width = 70
-        '
-        'grdConvChan_ToneLO
-        '
-        Me.grdConvChan_ToneLO.HeaderText = "Tone LO"
-        Me.grdConvChan_ToneLO.Name = "grdConvChan_ToneLO"
-        Me.grdConvChan_ToneLO.Width = 60
-        '
-        'grdConvChan_Att
-        '
-        Me.grdConvChan_Att.HeaderText = "Att"
-        Me.grdConvChan_Att.Name = "grdConvChan_Att"
-        Me.grdConvChan_Att.Width = 40
-        '
-        'grdConvChan_Pri
-        '
-        Me.grdConvChan_Pri.HeaderText = "Pri"
-        Me.grdConvChan_Pri.Name = "grdConvChan_Pri"
-        Me.grdConvChan_Pri.Width = 40
-        '
-        'grdConvChan_Step
-        '
-        Me.grdConvChan_Step.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_Step.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_Step.HeaderText = "Step"
-        Me.grdConvChan_Step.Name = "grdConvChan_Step"
-        Me.grdConvChan_Step.Width = 60
-        '
-        'grdCOnvChan_MOD
-        '
-        Me.grdCOnvChan_MOD.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdCOnvChan_MOD.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdCOnvChan_MOD.HeaderText = "Mod"
-        Me.grdCOnvChan_MOD.Name = "grdCOnvChan_MOD"
-        Me.grdCOnvChan_MOD.Width = 55
-        '
-        'grdConvChan_NAC
-        '
-        Me.grdConvChan_NAC.HeaderText = "NAC / CC"
-        Me.grdConvChan_NAC.MaxInputLength = 4
-        Me.grdConvChan_NAC.Name = "grdConvChan_NAC"
-        Me.grdConvChan_NAC.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.grdConvChan_NAC.ToolTipText = "Enter P25 NAC (0-FFF) or DMR Color Code (0 to 15 represented by 1000 to 100F)"
-        Me.grdConvChan_NAC.Width = 60
-        '
-        'grdConvChan_AudioType
-        '
-        Me.grdConvChan_AudioType.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AudioType.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AudioType.HeaderText = "AudioType"
-        Me.grdConvChan_AudioType.Name = "grdConvChan_AudioType"
-        Me.grdConvChan_AudioType.Width = 75
-        '
-        'grdConvChan_AltTone
-        '
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        Me.grdConvChan_AltTone.DefaultCellStyle = DataGridViewCellStyle5
-        Me.grdConvChan_AltTone.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AltTone.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AltTone.HeaderText = "Alt Tone"
-        Me.grdConvChan_AltTone.Name = "grdConvChan_AltTone"
-        Me.grdConvChan_AltTone.Width = 60
-        '
-        'grdConvChan_AltLevel
-        '
-        Me.grdConvChan_AltLevel.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AltLevel.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AltLevel.HeaderText = "Alt Level"
-        Me.grdConvChan_AltLevel.Name = "grdConvChan_AltLevel"
-        Me.grdConvChan_AltLevel.ToolTipText = "Alert tone volume level. 0 = Auto"
-        Me.grdConvChan_AltLevel.Width = 60
-        '
-        'grdConvChan_AltColor
-        '
-        Me.grdConvChan_AltColor.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AltColor.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AltColor.HeaderText = "Alt Color"
-        Me.grdConvChan_AltColor.Name = "grdConvChan_AltColor"
-        Me.grdConvChan_AltColor.Width = 60
-        '
-        'grdConvChan_AltPattern
-        '
-        Me.grdConvChan_AltPattern.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_AltPattern.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_AltPattern.HeaderText = "Alt Pat"
-        Me.grdConvChan_AltPattern.Name = "grdConvChan_AltPattern"
-        Me.grdConvChan_AltPattern.Width = 60
-        '
-        'grdConvChan_VolOffset
-        '
-        Me.grdConvChan_VolOffset.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox
-        Me.grdConvChan_VolOffset.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.grdConvChan_VolOffset.HeaderText = "Vol Adj"
-        Me.grdConvChan_VolOffset.Name = "grdConvChan_VolOffset"
-        Me.grdConvChan_VolOffset.Width = 60
-        '
-        'grdConvChan_NumTag
-        '
-        Me.grdConvChan_NumTag.HeaderText = "Num Tag"
-        Me.grdConvChan_NumTag.MaxInputLength = 4
-        Me.grdConvChan_NumTag.Name = "grdConvChan_NumTag"
-        Me.grdConvChan_NumTag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        Me.grdConvChan_NumTag.Width = 65
-        '
-        'grdConvChan_RecOut
-        '
-        Me.grdConvChan_RecOut.HeaderText = "Rec Out"
-        Me.grdConvChan_RecOut.Name = "grdConvChan_RecOut"
-        Me.grdConvChan_RecOut.Width = 60
-        '
-        'grdConvChan_Comment
-        '
-        Me.grdConvChan_Comment.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.grdConvChan_Comment.HeaderText = "Comment"
-        Me.grdConvChan_Comment.MaxInputLength = 255
-        Me.grdConvChan_Comment.MinimumWidth = 100
-        Me.grdConvChan_Comment.Name = "grdConvChan_Comment"
-        Me.grdConvChan_Comment.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         '
         'lblSiteNote
         '

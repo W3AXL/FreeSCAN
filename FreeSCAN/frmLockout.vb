@@ -322,4 +322,9 @@ Friend Class frmLockout
         Call cmdRefresh_Click_1(cmdRefresh, New System.EventArgs())
         blnChgSaved = False
     End Sub
+
+    Private Sub frmLockout_load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
+    End Sub
+
 End Class

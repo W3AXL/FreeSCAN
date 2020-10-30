@@ -152,6 +152,7 @@ Friend Class frmStats
     End Sub
 
     Private Sub frmStats_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
         With cmbModel.Items
             .Clear()
             .Add("BCD996XT")

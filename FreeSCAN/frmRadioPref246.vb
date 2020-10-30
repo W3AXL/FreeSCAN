@@ -1883,6 +1883,7 @@ criticerror:
     End Sub
 
     Private Sub frmRadioPref246_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
         Call CheckBox1_CheckedChanged(Nothing, Nothing) 'SETS up simple mode view for custom search setting
 
     End Sub

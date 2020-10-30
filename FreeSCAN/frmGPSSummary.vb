@@ -225,8 +225,8 @@ Public Class frmGPSSummary
         Call LoadMap()
     End Sub
 
-    Private Sub frmGPSSummary_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
+    Private Sub frmGPSSummary_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
     End Sub
 
     Private Sub chkSysList_ItemCheck(sender As Object, e As System.Windows.Forms.ItemCheckEventArgs) Handles chkSysList.ItemCheck

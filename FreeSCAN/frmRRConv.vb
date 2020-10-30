@@ -1359,9 +1359,10 @@ Friend Class frmRRCon
     End Sub
 
     Private Sub frmRRCon_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
         Dim iBuff As String, cnt As Integer
         'Load the history menu
-   
+
         Try
             LoadHistory()
             iBuff = GetSetting("FreeSCAN", "Settings", "MiscGroup", "0")

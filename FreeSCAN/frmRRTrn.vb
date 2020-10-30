@@ -1249,6 +1249,7 @@ Friend Class frmRRTrn
     End Sub
 
     Private Sub frmRRTrn_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
         ReDim strFreq(0, 0)
         ReDim strvarSite(0, 0)
         ReDim strGroup(0, 0)

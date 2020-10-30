@@ -51,7 +51,7 @@
         Me.txtSysName.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.txtSysName.Size = New System.Drawing.Size(136, 20)
         Me.txtSysName.TabIndex = 1
-        Me.ToolTip1.SetToolTip(Me.txtSysName, "Enter desired system name. Leaving this blank would result in a default system na" & _
+        Me.ToolTip1.SetToolTip(Me.txtSysName, "Enter desired system name. Leaving this blank would result in a default system na" &
         "me.")
         '
         'Label1
@@ -151,5 +151,5 @@
         Me.PerformLayout()
 
     End Sub
-#End Region 
+#End Region
 End Class

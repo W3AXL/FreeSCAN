@@ -318,10 +318,8 @@ Friend Class frmGPS
         Me.Width = SmallSize
     End Sub
 
-
-
-    Private Sub frmGPS_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
+    Private Sub frmGPS_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
     End Sub
 
     Private Sub frmGPS_VisibleChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.VisibleChanged

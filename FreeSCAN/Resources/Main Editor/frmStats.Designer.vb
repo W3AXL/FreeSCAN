@@ -45,35 +45,35 @@
 	'It can be modified using the Windows Form Designer.
 	'Do not modify it using the code editor.
 	<System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmStats))
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.cmdClose = New System.Windows.Forms.Button
-        Me._lblMaxChannels_1 = New System.Windows.Forms.Label
-        Me._lblMaxGroups_1 = New System.Windows.Forms.Label
-        Me._lblMaxSites_1 = New System.Windows.Forms.Label
-        Me._lblMaxSystem_1 = New System.Windows.Forms.Label
-        Me._lblMaxChannels_0 = New System.Windows.Forms.Label
-        Me._lblMaxGroups_0 = New System.Windows.Forms.Label
-        Me._lblMaxSites_0 = New System.Windows.Forms.Label
-        Me._lblMaxSystem_0 = New System.Windows.Forms.Label
-        Me.Line1 = New System.Windows.Forms.Label
-        Me.lblUsedChannels = New System.Windows.Forms.Label
-        Me.lblUsedGroups = New System.Windows.Forms.Label
-        Me.lblSitesUsed = New System.Windows.Forms.Label
-        Me.lblSysUsed = New System.Windows.Forms.Label
-        Me._Label1_4 = New System.Windows.Forms.Label
-        Me._Channels_2 = New System.Windows.Forms.Label
-        Me._Label1_1 = New System.Windows.Forms.Label
-        Me._Label1_0 = New System.Windows.Forms.Label
+        Me.cmdClose = New System.Windows.Forms.Button()
+        Me._lblMaxChannels_1 = New System.Windows.Forms.Label()
+        Me._lblMaxGroups_1 = New System.Windows.Forms.Label()
+        Me._lblMaxSites_1 = New System.Windows.Forms.Label()
+        Me._lblMaxSystem_1 = New System.Windows.Forms.Label()
+        Me._lblMaxChannels_0 = New System.Windows.Forms.Label()
+        Me._lblMaxGroups_0 = New System.Windows.Forms.Label()
+        Me._lblMaxSites_0 = New System.Windows.Forms.Label()
+        Me._lblMaxSystem_0 = New System.Windows.Forms.Label()
+        Me.Line1 = New System.Windows.Forms.Label()
+        Me.lblUsedChannels = New System.Windows.Forms.Label()
+        Me.lblUsedGroups = New System.Windows.Forms.Label()
+        Me.lblSitesUsed = New System.Windows.Forms.Label()
+        Me.lblSysUsed = New System.Windows.Forms.Label()
+        Me._Label1_4 = New System.Windows.Forms.Label()
+        Me._Channels_2 = New System.Windows.Forms.Label()
+        Me._Label1_1 = New System.Windows.Forms.Label()
+        Me._Label1_0 = New System.Windows.Forms.Label()
         Me.Channels = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
         Me.Label1 = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
         Me.lblMaxChannels = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
         Me.lblMaxGroups = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
         Me.lblMaxSites = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
         Me.lblMaxSystem = New Microsoft.VisualBasic.Compatibility.VB6.LabelArray(Me.components)
-        Me.cmbModel = New System.Windows.Forms.ComboBox
-        Me.Label2 = New System.Windows.Forms.Label
+        Me.cmbModel = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.Channels, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Label1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.lblMaxChannels, System.ComponentModel.ISupportInitialize).BeginInit()

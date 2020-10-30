@@ -2618,6 +2618,7 @@ abort:
 
 
     Private Sub frmSystemEditor_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
+        Me.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath)
         Dim y As Integer
         Dim x As Single
         Dim SortMode As String = Nothing
@@ -3021,7 +3022,7 @@ abort:
                 RadioSetting(45) = CStr(iSpeed)
                 frmCtlSetup.chkLog.CheckState = iLog
                 blnVirtControlStartup = True
-                frmCtlSetup.cmdOpenControl_click(Nothing, Nothing)
+                frmCtlSetup.cmdOpenControl_Click(Nothing, Nothing)
             End If
         ElseIf sCMDLine = "/DEBUG" Then
             blnDebug = True

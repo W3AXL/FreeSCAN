@@ -87,11 +87,11 @@
         Me.slogan.BackColor = System.Drawing.Color.Transparent
         Me.slogan.Cursor = System.Windows.Forms.Cursors.Default
         Me.slogan.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.slogan.ForeColor = System.Drawing.Color.Black
-        Me.slogan.Location = New System.Drawing.Point(3, 89)
+        Me.slogan.ForeColor = System.Drawing.Color.LightGray
+        Me.slogan.Location = New System.Drawing.Point(3, 3)
         Me.slogan.Name = "slogan"
         Me.slogan.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.slogan.Size = New System.Drawing.Size(197, 67)
+        Me.slogan.Size = New System.Drawing.Size(594, 67)
         Me.slogan.TabIndex = 2
         Me.slogan.Text = """From My Parent's Base To Yours!"""
         '
