@@ -1,6 +1,8 @@
 Option Strict Off
 Option Explicit On
 Imports VB = Microsoft.VisualBasic
+Imports FreeSCAN.APIKey
+
 Friend Class frmRRTrn
     Inherits System.Windows.Forms.Form
     Dim strCountry(300, 3) As String '0=coid,  1=full name, 2=country code
@@ -702,7 +704,8 @@ Friend Class frmRRTrn
         varAuthInfo.password = txtpassword.Text
         varAuthInfo.version = "9" 'change this to 8 eventually but will need extensive testing
         varAuthInfo.style = "RPC"
-        varAuthInfo.appKey = "" 'Apply for an API key and put it here
+        'varAuthInfo.appKey = "" 'Apply for an API key and put it here
+        varAuthInfo.appKey = APIKey.APIKey  ' Included from external file, not present in public GIT repo
         Try
             strBuff = ActiveServ.getUserData(varAuthInfo).subExpireDate
         Catch ex As Exception

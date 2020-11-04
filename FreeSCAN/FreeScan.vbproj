@@ -129,6 +129,7 @@
     <Compile Include="API.vb">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="apikey.vb" />
     <Compile Include="AssemblyInfo.vb" />
     <Compile Include="Audio.vb" />
     <Compile Include="Declarations.vb">
