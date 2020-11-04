@@ -28,9 +28,9 @@ Module Module1
     Public Const MaxScannerTrnChan As Short = 500 'maximum number of channels in a trunked group
     Public Const MaxTgidChan As Integer = MaxScannerTrnChan
     Public Const MaxChanSetting As Integer = 30  'Do not change!
-    Public Const strProgTitle As String = "FreeSCAN 2.19-beta2"
+    Public Const strProgTitle As String = "FreeSCAN 2.19-release"
     Public Const MaxRadioSetting As Integer = 200 'Do not change!
-    Public Const BuildNum As Integer = 1053 'set for version 2/19 beta2
+    Public Const BuildNum As Integer = 1054 'set for version 2.19 release
     Public Const NumPrefs As Integer = 3
     Public Const APCOMode As String = "AUTO"
     Public Const APCOThreshold As String = "8"
