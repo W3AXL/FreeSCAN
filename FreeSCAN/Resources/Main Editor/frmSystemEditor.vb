@@ -8878,6 +8878,18 @@ criticerror:
         Call mnuPasteChannel_Click(Nothing, Nothing)
     End Sub
 
+    ' Opens Context Menu on Right-Clicked Cell in Conv System Data Grid
+    Private Sub grdConvChan_CellContextMenuStripNeeded(sender As Object, e As DataGridViewCellContextMenuStripNeededEventArgs) Handles grdConvChan.CellContextMenuStripNeeded
+        Console.WriteLine("Right clicked data grid")
+        ' Make sure we have a valid cell to right-click
+        If (e.RowIndex > -1 & e.ColumnIndex > -1) Then
+            ' Set the clicked cell as selected
+            grdConvChan.CurrentCell = grdConvChan.Rows(e.RowIndex).Cells(e.ColumnIndex)
+            ' Open the context menu
+            e.ContextMenuStrip = mnuGridRowRightClick
+        End If
+    End Sub
+
     Private Sub mnuEditSelectAll_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mnuEditSelectAll.Click
         'Selects all in a grid
         Dim VisGrid As DataGridView

@@ -769,6 +769,9 @@
         Me.DownloadScannerToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.ControlScannerToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.mnuGridRowRightClick = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.FillValueDownToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FillValueUpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         _Label28_17 = New System.Windows.Forms.Label()
         _Label28_18 = New System.Windows.Forms.Label()
         _Label28_6 = New System.Windows.Forms.Label()
@@ -852,6 +855,7 @@
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
+        Me.mnuGridRowRightClick.SuspendLayout()
         Me.SuspendLayout()
         '
         '_Label28_17
@@ -5935,6 +5939,24 @@
         Me.SplitContainer1.SplitterDistance = 167
         Me.SplitContainer1.TabIndex = 224
         '
+        'mnuGridRowRightClick
+        '
+        Me.mnuGridRowRightClick.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FillValueDownToolStripMenuItem, Me.FillValueUpToolStripMenuItem})
+        Me.mnuGridRowRightClick.Name = "mnuGridRowRightClick"
+        Me.mnuGridRowRightClick.Size = New System.Drawing.Size(181, 70)
+        '
+        'FillValueDownToolStripMenuItem
+        '
+        Me.FillValueDownToolStripMenuItem.Name = "FillValueDownToolStripMenuItem"
+        Me.FillValueDownToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FillValueDownToolStripMenuItem.Text = "Fill Value Down"
+        '
+        'FillValueUpToolStripMenuItem
+        '
+        Me.FillValueUpToolStripMenuItem.Name = "FillValueUpToolStripMenuItem"
+        Me.FillValueUpToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FillValueUpToolStripMenuItem.Text = "Fill Value Up"
+        '
         'lblSiteNote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6034,6 +6056,7 @@
         Me.SplitContainer1.Panel2.ResumeLayout(False)
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.SplitContainer1.ResumeLayout(False)
+        Me.mnuGridRowRightClick.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -6189,5 +6212,8 @@
     Friend WithEvents grdConvChan_NumTag As DataGridViewTextBoxColumn
     Friend WithEvents grdConvChan_RecOut As DataGridViewCheckBoxColumn
     Friend WithEvents grdConvChan_Comment As DataGridViewTextBoxColumn
+    Friend WithEvents mnuGridRowRightClick As ContextMenuStrip
+    Friend WithEvents FillValueDownToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FillValueUpToolStripMenuItem As ToolStripMenuItem
 #End Region
 End Class
